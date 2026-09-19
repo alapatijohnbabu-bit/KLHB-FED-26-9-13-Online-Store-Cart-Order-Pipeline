@@ -1,56 +1,69 @@
-# 🛒 Online Store Cart and Order Pipeline
+# 🛒 KLHB-FED-26-9-13-Online Store Cart & Order Pipeline
 
-A Java-based **Online Store Cart and Order Pipeline** that simulates the core operations of an e-commerce shopping system. The application allows users to browse products, add and manage items in a shopping cart, proceed to checkout, make a simulated payment, place orders, and track their order status.
+## Project Information
 
-## 📌 Project Overview
+| Item | Details |
+|---|---|
+| **Project No.** | 13 |
+| **Project Title** | Online Store Cart & Order Pipeline |
+| **Branch / Code** | FED |
+| **Academic Year Code** | 26 |
+| **Team ID** | 9 |
+| **Supervisor** | Rakesh.K |
+| **Programming Language** | Java |
+| **Current Phase** | Project setup and repository structuring |
 
-The project demonstrates how an online shopping system manages the complete journey of a customer order — from selecting a product to successful delivery.
+## Team Members
 
-The application is developed using **Java** and focuses on applying fundamental Object-Oriented Programming concepts and Java programming techniques in a practical project.
+| S. No. | Name | KLH ID | GitHub Username |
+|---:|---|---|---|
+| 1 | K. Vishnu Preetham | 2620090013 | kandurivishnupreetham-pixel |
+| 2 | K. Shashank Goud | 2620030057 | Shashank763304 |
+| 3 | A. John Babu | 2620040010 | alapatijohnbabu-bit |
 
-## 🎯 Objectives
+## Abstract
 
-* To develop a basic online shopping system using Java.
-* To implement shopping cart functionality.
-* To manage products and their availability.
-* To calculate cart and order totals.
-* To simulate the checkout and payment process.
-* To implement an order processing pipeline.
-* To track the status of placed orders.
-* To demonstrate Object-Oriented Programming concepts in Java.
+The **Online Store Cart & Order Pipeline** is a Java-based e-commerce simulation that models the flow of a customer order from product selection through delivery. The project demonstrates fundamental Object-Oriented Programming concepts and core Java programming techniques through a practical online shopping workflow.
 
-## ⚙️ Features
+The system is designed to support product and inventory management, shopping-cart operations, checkout, simulated payment processing, order creation, and order-status tracking. The order pipeline represents the progression of an order through stages such as **Placed → Confirmed → Packed → Shipped → Delivered**, with cancellation handled where applicable.
 
-### 👤 Customer Management
+## Objectives
 
-* Store customer details.
-* Create and manage customer orders.
-* View order information.
+- Develop a basic online shopping system using Java.
+- Implement product and inventory management.
+- Add, remove, update, and view cart items.
+- Calculate cart and order totals.
+- Simulate checkout and payment processing.
+- Create and track customer orders.
+- Model an order-processing pipeline.
+- Apply Object-Oriented Programming principles in a practical project.
 
-### 📦 Product Management
+## Features
 
-* Display available products.
-* Store product ID, name, category, price, and quantity.
-* Check product availability.
+### Customer Management
+- Store customer details.
+- Create and manage customer orders.
+- View order information.
 
-### 🛒 Shopping Cart
+### Product & Inventory Management
+- Display available products.
+- Store product ID, name, category, price, and quantity.
+- Check product availability.
 
-* Add products to the cart.
-* Remove products from the cart.
-* Update product quantities.
-* View cart items.
-* Calculate the total cart value.
+### Shopping Cart
+- Add products to the cart.
+- Remove products from the cart.
+- Update product quantities.
+- View cart items.
+- Calculate total cart value.
 
-### 💳 Checkout & Payment
+### Checkout & Payment
+- Proceed to checkout.
+- Calculate the final order amount.
+- Simulate payment processing.
+- Confirm successful orders.
 
-* Proceed to checkout.
-* Calculate the final order amount.
-* Simulate payment processing.
-* Confirm successful orders.
-
-### 🚚 Order Pipeline
-
-Orders move through different stages:
+### Order Pipeline
 
 ```text
 Order Placed
@@ -66,7 +79,7 @@ Order Delivered
 
 Orders can also be cancelled when applicable.
 
-## 🧩 Main Modules
+## System Modules
 
 ```text
 Customer Module
@@ -84,148 +97,192 @@ Order Module
 Order Tracking Module
 ```
 
-## 🏗️ Project Structure
-
-The project is organized into multiple classes based on their responsibilities.
+## Repository Structure
 
 ```text
-OnlineStore/
+KLHB-FED-26-9-13-Online Store Cart & Order Pipeline/
 │
-├── Customer.java
-├── Product.java
-├── Cart.java
-├── CartItem.java
-├── Order.java
-├── OrderItem.java
-├── Payment.java
-├── Inventory.java
-├── OrderStatus.java
-└── Main.java
+├── src/                         # Java source code
+├── docs/                        # Requirements, design and diagrams
+├── data/                        # Sample/input data or data-source reference
+├── results/                     # Outputs and test evidence
+├── reports/                     # Phase and final report material
+├── README.md
+└── .gitignore
 ```
 
-## 💻 Technologies Used
+### Directory Usage
 
-* **Java**
-* **JDK 17+**
-* **Object-Oriented Programming**
-* **Java Collections Framework**
-* **Exception Handling**
-* **File Handling / Database** *(if implemented)*
-* **Git**
-* **GitHub**
+- **src/** — Java source code and application entry point.
+- **docs/** — requirements, design documents, flowcharts and diagrams.
+- **data/** — sample/input data or documented external data-source references.
+- **results/** — verified program outputs, testing evidence and screenshots.
+- **reports/** — phase deliverables and final report material.
 
-## 🧠 Java Concepts Used
+## Technologies Used
 
-This project demonstrates the following Java concepts:
+- Java
+- JDK 17+
+- Object-Oriented Programming
+- Java Collections Framework
+- Exception Handling
+- Git
+- GitHub
 
-* Classes and Objects
-* Encapsulation
-* Inheritance
-* Polymorphism
-* Abstraction
-* Constructors
-* Methods
-* Interfaces
-* Arrays and ArrayList
-* Conditional Statements
-* Loops
-* Exception Handling
-* Enumerations
-* Packages
-* File Handling
-* JDBC *(if database connectivity is implemented)*
+Only technologies actually implemented in the source code should be described as implemented.
 
-## 🔄 Order Processing Flow
+## Order Processing Flow
 
 ```text
-          START
-            │
-            ▼
-     View Available Products
-            │
-            ▼
-       Select Product
-            │
-            ▼
-       Add to Cart
-            │
-            ▼
-      Modify Cart?
-        /       \
-      Yes        No
-       │          │
-       └────┐     ▼
-            │   Checkout
-            │      │
-            │      ▼
-            │    Payment
-            │      │
-            │      ▼
-            │  Order Placed
-            │      │
-            │      ▼
-            │  Order Confirmed
-            │      │
-            │      ▼
-            │    Packed
-            │      │
-            │      ▼
-            │    Shipped
-            │      │
-            │      ▼
-            │   Delivered
-            │      │
-            └──────┴────► END
+              START
+                │
+                ▼
+      View Available Products
+                │
+                ▼
+         Select Product
+                │
+                ▼
+          Add to Cart
+                │
+                ▼
+         Modify Cart?
+          /         \
+        Yes          No
+         │            │
+         └─────┐      ▼
+               │   Checkout
+               │      │
+               │      ▼
+               │    Payment
+               │      │
+               │      ▼
+               │  Order Placed
+               │      │
+               │      ▼
+               │ Order Confirmed
+               │      │
+               │      ▼
+               │    Packed
+               │      │
+               │      ▼
+               │    Shipped
+               │      │
+               │      ▼
+               │   Delivered
+               │      │
+               └──────┴──────► END
 ```
 
-## 📋 Requirements
+## Requirements
 
 ### Hardware
-
-* Processor: Intel Core i3 or equivalent and above
-* RAM: Minimum 4 GB
-* Storage: Minimum 500 MB free space
+- Processor: Intel Core i3 equivalent or above
+- RAM: Minimum 4 GB
+- Storage: At least 500 MB free space
 
 ### Software
+- Windows / Linux / macOS
+- JDK 17 or later
+- VS Code / IntelliJ IDEA / Eclipse / NetBeans
+- Git
+- GitHub account
 
-* Windows / Linux / macOS
-* JDK 17 or above
-* IntelliJ IDEA / Eclipse / VS Code / NetBeans
-* Git
-* GitHub
+## Setup and Execution
 
-## 🚀 How to Run
+### 1. Install Java
 
-1. Install **JDK 17 or later**.
-2. Clone this repository.
-3. Open the project in your preferred Java IDE.
-4. Compile the Java source files.
-5. Run `Main.java`.
-6. Follow the instructions displayed by the application.
+Install **JDK 17 or later** and verify:
 
-## 📈 Future Enhancements
+```bash
+java -version
+javac -version
+```
 
-The project can be extended with:
+### 2. Clone the Repository
 
-* User registration and login
-* Graphical User Interface (GUI)
-* MySQL database integration
-* Real-time inventory management
-* Multiple payment methods
-* Discount and coupon system
-* Product search and filtering
-* Admin dashboard
-* Order history
-* Email/SMS order notifications
-* Online payment gateway integration
+```bash
+git clone <repository-url>
+cd <repository-folder>
+```
 
-## 👨‍💻 Project Information
+### 3. Compile
 
-**Project No.:** 13
-**Project Title:** Online Store Cart and Order Pipeline
-**Programming Language:** Java
-**Project Type:** Semester Project
+For a simple source layout:
 
-## 📄 License
+```bash
+javac -d out src/*.java
+```
 
-This project is developed for **educational purposes** as part of a semester project.
+### 4. Run
+
+```bash
+java -cp out Main
+```
+
+If the final source uses packages or a different build structure, these commands must be updated to match the implemented project.
+
+## GitHub Submission & Contribution Rules
+
+The repository follows the project submission norms provided by the course:
+
+1. One repository is maintained for the team for the full project duration.
+2. The repository follows the official project naming information provided by the supervisor.
+3. Required top-level directories are **src, docs, data, results, and reports**.
+4. Every team member must make meaningful commits using their own GitHub account.
+5. Contributions must be made progressively throughout the project phases.
+6. Maintain at least one meaningful team commit per week.
+7. Tag phase deliverables, for example:
+   - `review-1`
+   - `review-2`
+   - `final`
+8. Grant repository access to the **Supervisor** and **Course Coordinator**.
+9. Keep the repository accessible until final project evaluation is completed.
+
+## Phase Status
+
+**Current Phase:** Project setup and repository structuring.
+
+Update this section whenever a new official project phase begins.
+
+## Submission Checklist
+
+- [ ] Required repository name confirmed and applied.
+- [x] Project title recorded as provided by the supervisor.
+- [x] Team member names and KLH IDs added.
+- [x] Team GitHub usernames added.
+- [x] Supervisor name added.
+- [ ] Course Coordinator access granted.
+- [ ] Supervisor access granted.
+- [ ] src populated with actual Java source code.
+- [ ] docs populated with approved documentation and diagrams.
+- [ ] data populated with required sample data or a documented data source.
+- [ ] results populated with verified outputs/test evidence.
+- [ ] reports populated with phase deliverables.
+- [ ] Weekly meaningful commits maintained.
+- [ ] Each team member has meaningful commits from their own account.
+- [ ] Phase tags created.
+- [ ] README execution instructions tested against the actual source code.
+
+## Future Enhancements
+
+Potential extensions, if approved and implemented, include:
+
+- User registration and login
+- Graphical User Interface (GUI)
+- Database integration
+- Real-time inventory management
+- Multiple payment methods
+- Discount and coupon system
+- Product search and filtering
+- Admin dashboard
+- Order history
+- Notification system
+
+## Academic Use
+
+This repository is maintained as an educational semester project. Documentation should remain consistent with the actual implementation and submitted deliverables.
+
+## License
+
+This project is developed for educational purposes as part of a semester project.
