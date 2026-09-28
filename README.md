@@ -247,7 +247,7 @@ Update this section whenever a new official project phase begins.
 
 ## Submission Checklist
 
-- [ ] Required repository name confirmed and applied.
+- [x] Required repository name confirmed and applied.
 - [x] Project title recorded as provided by the supervisor.
 - [x] Team member names and KLH IDs added.
 - [x] Team GitHub usernames added.
