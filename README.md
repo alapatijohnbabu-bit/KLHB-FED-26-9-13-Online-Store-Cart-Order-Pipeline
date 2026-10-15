@@ -206,19 +206,31 @@ git clone <repository-url>
 cd <repository-folder>
 ```
 
-### 3. Compile
+### 3. Compile (compiled classes go into local trash/)
 
-For a simple source layout:
+Linux/macOS:
 
 ```bash
-javac -d out src/*.java
+mkdir -p trash
+find src/main/java -name "*.java" > /tmp/cartflow-sources.txt
+javac -d trash @/tmp/cartflow-sources.txt
+```
+
+Windows PowerShell:
+
+```powershell
+New-Item -ItemType Directory -Force -Path trash | Out-Null
+$files = Get-ChildItem -Recurse src/main/java -Filter *.java | ForEach-Object { $_.FullName }
+javac -d trash $files
 ```
 
 ### 4. Run
 
 ```bash
-java -cp out Main
+java -cp trash com.store.Main
 ```
+
+Use `scripts/run.sh` or `scripts/run.ps1` to compile and launch. Use `scripts/test.sh` or `scripts/test.ps1` to run the smoke test. The `trash/` directory is intentionally git-ignored; do not commit `.class` files.
 
 If the final source uses packages or a different build structure, these commands must be updated to match the implemented project.
 
