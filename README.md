@@ -23,9 +23,9 @@
 
 ## Abstract
 
-The **Online Store Cart & Order Pipeline** is a Java-based e-commerce simulation that models the flow of a customer order from product selection through delivery. The project demonstrates fundamental Object-Oriented Programming concepts and core Java programming techniques through a practical online shopping workflow.
+The **Online Store Cart & Order Pipeline** is a proposed Java-based e-commerce application for demonstrating the flow of a customer order from product selection through delivery. The project is intended to apply Object-Oriented Programming concepts and core Java techniques to a practical shopping workflow.
 
-The system is designed to support product and inventory management, shopping-cart operations, checkout, simulated payment processing, order creation, and order-status tracking. The order pipeline represents the progression of an order through stages such as **Placed → Confirmed → Packed → Shipped → Delivered**, with cancellation handled where applicable.
+The planned system will cover product and inventory management, shopping-cart operations, checkout with simulated payment, order creation, and order-status tracking. The intended order pipeline is **Placed → Confirmed → Packed → Shipped → Delivered**, with cancellation handled where applicable. The Java source files are currently awaiting implementation by the team, so these capabilities are requirements rather than verified working features.
 
 ## Objectives
 
@@ -38,7 +38,7 @@ The system is designed to support product and inventory management, shopping-car
 - Model an order-processing pipeline.
 - Apply Object-Oriented Programming principles in a practical project.
 
-## Features
+## Planned Features
 
 ### Customer Management
 - Store customer details.
@@ -133,7 +133,7 @@ KLHB-FED-26-9-13-Online Store Cart & Order Pipeline/
 - Git
 - GitHub
 
-Only technologies actually implemented in the source code should be described as implemented.
+These are the intended project technologies. The Java implementation has not yet been committed; update this section as the team implements and verifies the application.
 
 ## Order Processing Flow
 
@@ -243,7 +243,7 @@ If the final source uses different package names or a different build structure,
 The repository follows the project submission norms provided by the course:
 
 1. One repository is maintained for the team for the full project duration.
-2. The repository naming convention is `KLH-<Branch>-<AcademicYear>-<TeamID>-<ShortProjectName>`.
+2. The required repository naming convention is `KLH-<Branch>-<AcademicYear>-<TeamID>-<ShortProjectName>`. The current repository name should be checked and renamed in GitHub settings if it does not match this exact pattern before final submission.
 3. Required top-level directories are **src, docs, data, results, and reports**.
 4. Every team member must make meaningful commits using their own GitHub account.
 5. Contributions must be made progressively throughout the project phases.
@@ -256,7 +256,7 @@ The repository follows the project submission norms provided by the course:
 9. Keep the repository accessible until final project evaluation is completed.
 
 **Supervisor:** Rakesh.K  
-**Course Coordinator:** Add the official name here if required by your department.
+**Course Coordinator:** [Official name not yet provided]
 
 ## Phase Status
 
@@ -266,7 +266,7 @@ Update this section whenever a new official project phase begins.
 
 ## Submission Checklist
 
-- [x] Required repository name confirmed and applied.
+- [ ] Repository name verified against the exact required naming convention.
 - [x] Project title recorded as provided by the supervisor.
 - [x] Team member names and KLH IDs added.
 - [x] Team GitHub usernames added.
@@ -281,15 +281,10 @@ Update this section whenever a new official project phase begins.
 - [ ] Each team member has meaningful commits from their own account.
 - [ ] Phase tags created.
 
-## Future Enhancements
+## Possible Future Enhancements
 
-Potential future enhancements include:
+After the core requirements are implemented and tested, possible extensions include:
 
-- Graphical desktop interface
-- Product search and stock display
-- Cart operations and INR total calculation
-- Simulated checkout and order tracking
-- Future-dated reservations and availability alerts
 - User registration and login
 - Persistent database integration
 - Real payment provider integration
