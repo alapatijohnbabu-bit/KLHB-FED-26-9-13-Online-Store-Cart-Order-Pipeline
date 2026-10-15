@@ -1,9 +1,8 @@
 # Java compiled output (never commit .class files)
 *.class
-trash/*
-!trash/.gitkeep
+bin/*
+!bin/.gitkeep
 out/
-bin/
 target/
 build/
 
