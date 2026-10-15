@@ -11,7 +11,7 @@
 | **Team ID** | 9 |
 | **Supervisor** | Rakesh.K |
 | **Programming Language** | Java |
-| **Current Phase** | Project setup and repository structuring |
+| **Current Phase** | Java Swing prototype implemented |
 
 ## Team Members
 
@@ -254,7 +254,7 @@ Update this section whenever a new official project phase begins.
 - [x] Supervisor name added.
 - [ ] Course Coordinator access granted.
 - [ ] Supervisor access granted.
-- [ ] src populated with actual Java source code.
+- [x] src populated with Java Swing application source code.
 - [ ] docs populated with approved documentation and diagrams.
 - [ ] data populated with required sample data or a documented data source.
 - [ ] results populated with verified outputs/test evidence.
@@ -262,22 +262,26 @@ Update this section whenever a new official project phase begins.
 - [ ] Weekly meaningful commits maintained.
 - [ ] Each team member has meaningful commits from their own account.
 - [ ] Phase tags created.
-- [ ] README execution instructions tested against the actual source code.
+- [x] Java Swing run instructions added in README-JAVA-APP.md.
 
 ## Future Enhancements
 
-Potential extensions, if approved and implemented, include:
+Implemented in the current Java Swing prototype:
+
+- Graphical desktop interface
+- Product search and stock display
+- Cart operations and INR total calculation
+- Simulated checkout and order tracking
+- Future-dated reservations and availability alerts
+
+Potential future enhancements:
 
 - User registration and login
-- Graphical User Interface (GUI)
-- Database integration
-- Real-time inventory management
-- Multiple payment methods
-- Discount and coupon system
-- Product search and filtering
+- Persistent database integration
+- Real payment provider integration
+- Discounts and coupons
 - Admin dashboard
-- Order history
-- Notification system
+- Notifications and automated reservation fulfillment
 
 ## Academic Use
 
@@ -286,3 +290,8 @@ This repository is maintained as an educational semester project. Documentation 
 ## License
 
 This project is developed for educational purposes as part of a semester project.
+
+
+## Java Swing Application
+
+The Java 17+ desktop prototype is implemented under `src/main/java/com/store/`. See [README-JAVA-APP.md](README-JAVA-APP.md) for compile/run instructions, smoke-test steps, implemented features and prototype limitations. The app uses in-memory demo data; payment is simulated only.
