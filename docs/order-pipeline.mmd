@@ -1,3 +1,4 @@
+%% Planned workflow for the project; update after implementation and testing.
 flowchart TD
     A([Start]) --> B[Browse and search catalogue]
     B --> C[Select product and quantity]
@@ -10,8 +11,8 @@ flowchart TD
     G -- No --> H[Checkout]
     H --> I{Cart valid and stock available?}
     I -- No --> B
-    I -- Yes --> J[Simulate payment]
-    J --> K[Create order and reduce stock]
+    I -- Yes --> J[Simulated payment]
+    J --> K[Create order and update stock]
     K --> L[PLACED / CONFIRMED]
     L --> M[PACKED]
     M --> N[SHIPPED]
