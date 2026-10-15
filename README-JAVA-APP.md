@@ -1,36 +1,36 @@
 # CartFlow — Java Swing Online Store Cart & Order Pipeline
 
-A Java 17+ desktop demonstration app for the existing semester project. It includes product search, a shopping cart, stock validation, simulated checktrash, an order status pipeline, and future-dated reservations with stock alerts and category alternatives.
+A Java 17+ desktop demonstration app for the existing semester project. It includes product search, a shopping cart, stock validation, simulated checkbin, an order status pipeline, and future-dated reservations with stock alerts and category alternatives.
 
 ## Run (JDK 17+)
 
 From the repository root:
 
 ```bash
-javac -d trash $(find src/main/java -name "*.java")
-java -cp trash com.store.Main
+javac -d bin $(find src/main/java -name "*.java")
+java -cp bin com.store.Main
 ```
 
 Windows PowerShell alternative:
 
 ```powershell
 $files = Get-ChildItem -Recurse src/main/java -Filter *.java | ForEach-Object { $_.FullName }
-javac -d trash $files
-java -cp trash com.store.Main
+javac -d bin $files
+java -cp bin com.store.Main
 ```
 
 ## Run the smoke test
 
 ```bash
-javac -cp trash -d trash src/test/java/com/store/StoreSmokeTest.java
-java -cp trash com.store.StoreSmokeTest
+javac -cp bin -d bin src/test/java/com/store/StoreSmokeTest.java
+java -cp bin com.store.StoreSmokeTest
 ```
 
 ## Features
 
 - Searchable seeded product catalog with category and stock.
 - Add/remove cart items, quantity validation and INR totals.
-- Checktrash validates inventory, simulates a payment method and creates an order.
+- Checkbin validates inventory, simulates a payment method and creates an order.
 - Order pipeline: PLACED → CONFIRMED → PACKED → SHIPPED → DELIVERED; eligible orders can be cancelled and stock restored.
 - Future-dated product reservations.
 - Reservation availability checks and same-category alternative suggestions when stock is insufficient.
