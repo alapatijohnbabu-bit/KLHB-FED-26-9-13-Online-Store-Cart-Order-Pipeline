@@ -1,9 +1,9 @@
-# Project documentation
+# Project Documentation
 
 - [Requirements](requirements.md)
-- [Architecture and module responsibilities](architecture.md)
-- [Order pipeline flowchart](order-pipeline.mmd)
-- [Testing plan](testing-plan.md)
-- [Team contribution plan](team-contributions.md)
+- [Proposed Architecture](architecture.md)
+- [Order Pipeline Flowchart](order-pipeline.mmd)
+- [Testing Plan](testing-plan.md)
+- [Team Contributions](team-contributions.md)
 
-These documents describe the educational Java Swing prototype. The app uses in-memory data and simulated payments; do not describe persistence or real payment processing as implemented.
+These are planning documents for the Online Store Cart & Order Pipeline semester project. The Java source files are to be added by the team. Treat architecture and testing items as planned until implemented and verified. Do not claim unimplemented functionality as complete.
