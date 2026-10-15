@@ -1,27 +1,26 @@
-# Implementation status — Java Swing prototype
+# Implementation Status
 
-## Included in source
-- Java Swing tabbed desktop UI.
-- In-memory sample product catalogue and search.
-- Cart quantity and stock validation, INR totals.
-- Simulated checkout and payment choices.
-- Order tracking states and eligible cancellation with stock restoration.
-- Future-dated reservations, availability flags and alternative suggestions.
-- Dependency-free smoke test.
+## Current phase
+**Project setup and repository structuring.**
 
-## Not implemented
-- Database persistence or login.
-- Real payment gateway.
-- Guaranteed stock holds for future reservations.
-- Automatic scheduled fulfillment or customer notifications.
-- Multi-user concurrent inventory locking.
+The Java source files were intentionally removed so the three team members can add their assigned modules and make individual contributions under their own GitHub accounts. Therefore, this repository currently contains planning documents, sample data, scripts and existing presentation/report assets, but no committed Java application source or runnable application.
 
-## Evidence to collect before submission
-- Screenshot of catalogue and search.
-- Screenshot of cart with a calculated total.
-- Screenshot of order status progression.
-- Screenshot of future reservation and availability-check result.
-- Console output showing the smoke test passed.
-- Team commit links showing each member's own contribution.
+## Planned features
+- Product catalogue and search.
+- Cart operations, quantity validation and stock checks.
+- Checkout with simulated payment.
+- Order status pipeline and eligible cancellation.
+- Future-dated reservations and availability checks.
+- Desktop UI if confirmed by the team.
 
-Only mark a feature complete after the team has run and verified it.
+These are planned features, not completed implementation claims.
+
+## Evidence to collect after implementation
+- [ ] Screenshot of catalogue/search.
+- [ ] Screenshot of cart and calculated total.
+- [ ] Screenshot of checkout and order status.
+- [ ] Screenshot of reservation/availability behavior, if implemented.
+- [ ] Actual compile and test output with JDK version.
+- [ ] Commit links showing meaningful contributions by each member.
+
+Update this file only after implementation has been committed and verified.
