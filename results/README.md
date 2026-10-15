@@ -1,12 +1,14 @@
-# Results and test evidence
+# Results and Test Evidence
 
-Place screenshots and text logs of tests performed by the team in this directory. Include the test date, JDK version, steps performed and actual result. Do not upload passwords, tokens, real payment details or private customer data.
+This folder is reserved for genuine outputs and evidence produced after the team implements and tests the application.
 
-Suggested evidence:
+For every result, include the test date, JDK version, steps performed, expected result and actual result. Upload authentic screenshots or console logs only. Do not label sample data, mockups or expected output as verified test results.
+
+Suggested evidence filenames:
 - `catalog-search.png`
 - `cart-checkout.png`
 - `order-pipeline.png`
-- `future-reservation.png`
-- `smoke-test.txt`
+- `reservation-check.png`
+- `compile-and-test.txt`
 
-Do not label sample or expected output as verified output.
+Never upload passwords, access tokens, real payment details or private customer data.
