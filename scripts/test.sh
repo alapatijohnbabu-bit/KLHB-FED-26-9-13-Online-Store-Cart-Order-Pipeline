@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 set -eu
-mkdir -p trash
+mkdir -p bin
 find src/main/java -name '*.java' -print > /tmp/cartflow-sources.txt
-javac -d trash @/tmp/cartflow-sources.txt
-javac -cp trash -d trash src/test/java/com/store/StoreSmokeTest.java
-java -cp trash com.store.StoreSmokeTest
+javac -d bin @/tmp/cartflow-sources.txt
+javac -cp bin -d bin src/test/java/com/store/StoreSmokeTest.java
+java -cp bin com.store.StoreSmokeTest
