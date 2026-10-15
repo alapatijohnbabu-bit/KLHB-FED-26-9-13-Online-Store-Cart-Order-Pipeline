@@ -1,23 +1,25 @@
-# Testing plan
+# Testing Plan
 
-## Automated smoke test
-Compile all production Java sources into `trash`, compile `StoreSmokeTest.java` against them, and run `com.store.StoreSmokeTest`. It verifies a positive cart total, checkout confirmation, inventory decrement and order pipeline advancement.
+The Java source files and test classes have not yet been added to this repository. The checklist below describes planned verification; it is not evidence that tests have passed.
 
-## Manual UI checklist
-- [ ] Launch app and confirm the four tabs are visible.
-- [ ] Search by product name, category and ID.
-- [ ] Add an available product to the cart.
-- [ ] Reject zero, negative and non-numeric quantities.
-- [ ] Reject quantities above current stock.
-- [ ] Remove an item and verify total recalculates.
-- [ ] Checkout with each simulated payment option.
-- [ ] Confirm stock decreases after checkout.
-- [ ] Advance an order from CONFIRMED to PACKED to SHIPPED to DELIVERED.
-- [ ] Confirm a delivered order cannot be cancelled or advanced.
-- [ ] Cancel an eligible order and verify stock is restored.
-- [ ] Create a reservation for a future date; reject today's or past dates.
-- [ ] Run the availability check and inspect any flagged reservation.
-- [ ] Close and reopen the app; verify the documented in-memory reset.
+## Planned business-rule checks
+- [ ] Application launches successfully on JDK 17 or later.
+- [ ] Product catalogue displays the expected sample data.
+- [ ] Search works by product name, category and ID.
+- [ ] Valid cart quantities are accepted.
+- [ ] Zero, negative, non-numeric and over-stock quantities are rejected.
+- [ ] Removing or updating cart items recalculates totals correctly.
+- [ ] Checkout validates stock before processing.
+- [ ] Simulated payment creates an order only on the expected success path.
+- [ ] Stock changes correctly after checkout.
+- [ ] Order status transitions follow the agreed pipeline.
+- [ ] Cancellation is restricted to eligible orders.
+- [ ] Reservation date and quantity validation work as specified.
+- [ ] Availability checks flag reservations that need action.
+- [ ] Errors are displayed clearly and do not crash the application unexpectedly.
 
-## Current scope
-These are project-level checks, not a claim of exhaustive production testing. Do not store real payment details or customer secrets in test data.
+## Evidence to record
+For each test, record the date, JDK version, steps, expected result and actual result. Save genuine screenshots or console logs under `results/`. Do not label sample or expected output as a passed test.
+
+## Local compilation
+Once Java files exist, compile into the existing `bin/` directory. Never commit generated `.class` files.
