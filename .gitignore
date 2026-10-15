@@ -10,7 +10,6 @@ build/
 .idea/
 *.iml
 .vscode/*
-!.vscode/launch.json
 !.vscode/settings.json
 .project
 .classpath
