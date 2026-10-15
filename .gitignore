@@ -1,16 +1,30 @@
-# Compiled class file
+# Java compiled output (never commit .class files)
 *.class
+trash/*
+!trash/.gitkeep
+out/
+bin/
+target/
+build/
 
-# Log file
+# IDE settings
+.idea/
+*.iml
+.vscode/*
+!.vscode/launch.json
+!.vscode/settings.json
+.project
+.classpath
+.settings/
+
+# Logs and temporary files
 *.log
+hs_err_pid*
+replay_pid*
+.DS_Store
+Thumbs.db
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+# Archives and packaged binaries
 *.jar
 *.war
 *.nar
@@ -18,7 +32,3 @@
 *.zip
 *.tar.gz
 *.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*

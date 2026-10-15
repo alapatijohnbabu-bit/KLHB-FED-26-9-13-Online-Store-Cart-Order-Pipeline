@@ -1,0 +1,11 @@
+id,name,category,price_inr,stock
+P101,Wireless Headphones,Electronics,2499.00,12
+P102,Mechanical Keyboard,Electronics,3299.00,8
+P103,USB-C Hub,Electronics,1599.00,15
+P104,Cotton T-Shirt,Clothing,599.00,25
+P105,Everyday Backpack,Accessories,1299.00,10
+P106,Desk Lamp,Home,899.00,14
+P107,Notebook Set,Stationery,249.00,40
+P108,Bluetooth Speaker,Electronics,1899.00,6
+P109,Travel Mug,Home,399.00,18
+P110,Running Shoes,Clothing,2799.00,9
