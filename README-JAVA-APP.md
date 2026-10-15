@@ -1,6 +1,6 @@
 # CartFlow — Java Swing Online Store Cart & Order Pipeline
 
-A Java 17+ desktop demonstration app for the existing semester project. It includes product search, a shopping cart, stock validation, simulated checkbin, an order status pipeline, and future-dated reservations with stock alerts and category alternatives.
+A Java 17+ desktop demonstration app for the existing semester project. It includes product search, a shopping cart, stock validation, simulated checkout, an order status pipeline, and future-dated reservations with stock alerts and category alternatives.
 
 ## Run (JDK 17+)
 
