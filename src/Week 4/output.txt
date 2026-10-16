@@ -1,0 +1,4 @@
+1. View sample cart
+2. Review sample total
+3. Confirm review state
+Menu ended after 3 steps.

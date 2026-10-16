@@ -1,0 +1,8 @@
+Week 11: File handling and CSV
+CSV report created at: <absolute path to store-order-report.csv varies by computer>
+Rows written: 3
+
+Generated CSV contents:
+OrderId,Product,Quantity,UnitPrice,Total
+1001,Notebook,2,55.00,110.00
+1002,Pen,3,15.00,45.00

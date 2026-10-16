@@ -1,0 +1,8 @@
+Sample input:
+Number of different cart items (1-10): 2
+Item 1 unit price: 55
+Item 1 quantity: 2
+Item 2 unit price: 15
+Item 2 quantity: 3
+Total units in cart: 5
+Cart total: ₹155.00

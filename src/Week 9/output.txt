@@ -1,0 +1,5 @@
+Week 9: Classes, objects and encapsulation
+Notebook | ₹55.0 | stock: 10
+Pen | ₹15.0 | stock: 20
+Selling 2 pens: true
+Pen | ₹15.0 | stock: 18

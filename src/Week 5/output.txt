@@ -1,0 +1,12 @@
+Sample input:
+Product name: Notebook
+Unit price: 55
+Quantity: 2
+Discount percentage (0-100): 10
+
+--- Store Receipt ---
+Product: Notebook
+Quantity: 2
+Subtotal: ₹110.00
+Discount: ₹11.00
+Total: ₹99.00

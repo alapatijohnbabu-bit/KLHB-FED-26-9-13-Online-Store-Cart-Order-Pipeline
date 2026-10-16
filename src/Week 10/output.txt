@@ -1,0 +1,5 @@
+Sample input:
+Week 10: Exception handling
+Enter item price: 55
+Enter quantity: 2
+Subtotal: ₹110.00

@@ -1,0 +1,10 @@
+Valid product name? true
+Can purchase 2 from stock of 5? true
+
+Products sorted by price (low to high):
+USB Cable       ₹199.00
+Mouse           ₹499.00
+Keyboard        ₹899.00
+Headphones      ₹1499.00
+Webcam          ₹2299.00
+Sorted prices: [199.0, 499.0, 899.0, 1499.0, 2299.0]

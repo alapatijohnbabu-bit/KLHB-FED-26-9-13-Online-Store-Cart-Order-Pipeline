@@ -1,0 +1,6 @@
+Online Store Cart & Order Pipeline
+Sample item: TraceTiles
+Quantity: 2
+Sample unit price: 120.0
+Line total: 240.0
+Fictional demonstration data only.

@@ -1,0 +1,5 @@
+Week 12: Collections, lambdas and streams
+Pencil: ₹10.00
+Pen: ₹15.00
+Notebook: ₹55.00
+Total catalogue value: ₹200.00
